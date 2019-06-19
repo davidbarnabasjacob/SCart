@@ -40,11 +40,11 @@
         </div>
     </noscript>
     <script>
-        loadQuickView() {
+        var loadQuickView = function() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("quickview.data").innerHTML = this.responseText;
+                    document.getElementById("product_quick_look").innerHTML = this.responseText;
 
                     //PASTE YOUR CUSTOM EVENT HERE
 
@@ -52,7 +52,7 @@
 
                 }
             };
-            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.open("GET", "https://sharath-sudharsan.github.io/PageSense/quickview.data", true);
             xhttp.send();
         }
     </script>
