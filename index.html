@@ -39,6 +39,23 @@
                 JavaScript is disabled in your browser. Please enable JavaScript to continue.</div>
         </div>
     </noscript>
+    <script>
+        loadQuickView() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("quickview.data").innerHTML = this.responseText;
+
+                    //PASTE YOUR CUSTOM EVENT HERE
+
+
+
+                }
+            };
+            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.send();
+        }
+    </script>
 </head>
 
 <body>
@@ -376,7 +393,7 @@
                                                     data-zs-product-id="1706707000000068087">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/fa6ef9e19a/1706707000000068087?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -421,7 +438,7 @@
                                                     data-zs-product-id="1706707000000068515">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/h70d3bffa4/1706707000000068515?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -466,7 +483,7 @@
                                                     data-zs-product-id="1706707000000068543">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/c20595f097/1706707000000068543?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -512,7 +529,7 @@
                                                     data-zs-product-id="1706707000000068713">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/j9c1649166/1706707000000068713?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -551,7 +568,7 @@
                                                     data-zs-product-id="1706707000000068571">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/d3350967ca/1706707000000068571?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -597,7 +614,7 @@
                                                     data-zs-product-id="1706707000000068599">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/f5aebafaa6/1706707000000068599?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -906,7 +923,7 @@
                                                     data-zs-product-id="1706707000000068515">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/h70d3bffa4/1706707000000068515?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -951,7 +968,7 @@
                                                     data-zs-product-id="1706707000000068543">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/c20595f097/1706707000000068543?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -997,7 +1014,7 @@
                                                     data-zs-product-id="1706707000000068599">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/f5aebafaa6/1706707000000068599?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1066,7 +1083,7 @@
                                                     data-zs-product-id="1706707000000068087">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/fa6ef9e19a/1706707000000068087?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1111,7 +1128,7 @@
                                                     data-zs-product-id="1706707000000068515">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/h70d3bffa4/1706707000000068515?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1156,7 +1173,7 @@
                                                     data-zs-product-id="1706707000000068543">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/c20595f097/1706707000000068543?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1202,7 +1219,7 @@
                                                     data-zs-product-id="1706707000000068713">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/j9c1649166/1706707000000068713?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1241,7 +1258,7 @@
                                                     data-zs-product-id="1706707000000068571">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/d3350967ca/1706707000000068571?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
@@ -1287,7 +1304,7 @@
                                                     data-zs-product-id="1706707000000068599">
                                                     <div class="theme-product-box-inner">
                                                         <div class="theme-prod-hover-view"><a href="javascript:;"
-                                                                onclick="javascript:viewProductQuickLook(this)"
+                                                                onclick="javascript:loadQuickView(this)"
                                                                 data-zs-product-url="/products/f5aebafaa6/1706707000000068599?quick_look=true">
                                                                 Quick View </a><span
                                                                 class="theme-prod-hover-link-divider"></span><a
